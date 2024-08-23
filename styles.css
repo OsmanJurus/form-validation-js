@@ -1,0 +1,248 @@
+/**
+*! changing default styles for the browser!
+**/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+/**
+*!style rules for content!
+**/
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f2796e;
+  width: 55%;
+  min-height: 100vh;
+  padding: 10px 20px;
+}
+
+.logo {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.image {
+  background-image: url("images/illustration.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* border: 2px solid black; */
+  height: 75%;
+}
+
+.text {
+  padding: 20px;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+/**
+*! style rules for form section
+**/
+form {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+
+form div {
+  margin-bottom: 5px;
+  position: relative;
+}
+
+/* 
+.title {
+  font-family: lato;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.text{
+    font-size: 14px;
+    font-family: monospace;
+    color: #333;
+    font-weight: bold;
+}
+
+p{
+    font-size: 14px;
+    font-family: sans-serif;
+    color: #f2796e;
+}
+
+.btns{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+[class^="btn-"]{
+    display: flex;
+    flex-direction: column;
+  gap: 10px;
+}
+.or{
+    font-family: roboto;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px ;
+} */
+
+form div input {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid #c4c4c4;
+  padding: 0 40px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input:focus {
+  border: 2px solid #f2796e;
+}
+
+/**
+*! style rules for social section!
+**/
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+[class^="btn-"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  border: 2px solid #c4c4c4;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.btn-facebook {
+  background-color: dodgerblue;
+  color: #fff;
+}
+.question {
+  font-size: 15px;
+}
+
+.or {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+span {
+  color: #f2796e;
+  cursor: pointer;
+}
+
+/**
+*! style rules for form icons!
+**/
+form div i {
+  position: absolute;
+  padding: 10px;
+  color: green;
+}
+
+.fail-icon,
+.success-icon {
+  right: 5px;
+  opacity: 0;
+}
+
+.success-icon {
+  color: green;
+}
+.fail-icon {
+  color: red;
+}
+
+.error {
+  color: red;
+  margin-bottom: 5px;
+  font-size: 14;
+}
+
+/**
+*! style rules for button!
+**/
+button {
+  width: 100%;
+  height: 45px;
+  background-color: #f2796e;
+  border: 2px solid #f2796e;
+  margin-top: 15px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all ease-in-out 1s;
+}
+button:hover {
+  opacity: 0.7;
+}
+/**
+*! style rules for media Queries!
+**/
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content,
+  form {
+    width: 100%;
+  }
+
+  .image {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 568px) {
+  .btns {
+    flex-direction: column;
+  }
+}

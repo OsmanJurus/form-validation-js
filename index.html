@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="content">
+            <div class="logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <div class="image">
+
+            </div>
+            <div class="text">Start for free & get <br> attaractive offers today!</div>
+        </div>
+
+        <form action="" id="form">
+
+            <div class="socials">
+                <div class="title">Get Started!</div>
+
+                <div class="question">
+                    Already have an account ? <br>
+                    <span>Log in</span>
+                </div>
+
+                <div class="btns">
+                    <div class="btn-google">
+                        <img width="30" height="30" src="https://img.icons8.com/fluency/48/google-logo.png"
+                            alt="google-logo" />
+                        Sign UP
+                    </div>
+                    <div class="btn-facebook">
+                        <img width="30" height="30" src="https://img.icons8.com/ios-filled/f/facebook-new.png"
+                            alt="facebook-new" />
+                        Sign UP
+                    </div>
+                </div>
+
+                <div class="or">Or</div>
+            </div>
+
+
+
+            <!-- *! user name input here! -->
+            <div class="first">
+                <label for="username">User Name</label>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="Name here...">
+                <i class="fa-solid fail-icon fa-circle-exclamation"></i>
+                <i class="fa-solid success-icon fa-square-check"></i>
+                <div class="error"></div>
+            </div>
+            <!-- *! E-mail input here! -->
+            <div class="second">
+                <label for="email">Email</label>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="email" id="email" placeholder="Email here...">
+                <i class="fa-solid fail-icon fa-circle-exclamation"></i>
+                <i class="fa-solid success-icon fa-square-check"></i>
+                <div class="error"></div>
+            </div>
+            <!-- *!passwrod input here! -->
+            <div class="third">
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="password here...">
+                <i class="fa-solid fail-icon fa-circle-exclamation"></i>
+                <i class="fa-solid success-icon fa-square-check"></i>
+                <div class="error"></div>
+            </div>
+
+            <!-- *! submit button -->
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
